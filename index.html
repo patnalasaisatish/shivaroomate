@@ -818,24 +818,36 @@
                                 <p>
                                     If you have any suggestion, project or even you want to say Hello.. please fill out the form below and I will reply you shortly.
                                 </p>
-                                <form class="contactform">
-                                    <div class="row">
-                                        <div class="form-group col-xl-6"> <i class="fa fa-user prefix"></i>
-                                            <input id="name" name="name" type="text" class="form-control" placeholder="YOUR NAME" required>
-                                        </div>
-                                        <div class="form-group col-xl-6"> <i class="fa fa-envelope prefix"></i>
-                                            <input id="email" type="email" name="email" class="form-control" placeholder="YOUR EMAIL" required>
-                                        </div>
-                                        <div class="form-group col-xl-12"> <i class="fa fa-comments prefix"></i>
-                                            <textarea id="comment" name="comment" class="form-control" placeholder="YOUR MESSAGE" required></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="submit-form">
+                               <form id="contactform12">
+                  <div class="contactform">
+
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <input autocomplete="off" type="text" name="name" placeholder="YOUR NAME" required>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <input autocomplete="off" type="email" name="email" placeholder="YOUR EMAIL" required>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <input autocomplete="off" type="text" name="phone" placeholder="YOUR NUMBER" maxlength="10"
+                          minlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
+                      </div>
+
+                      <div class="col-12 col-md-6">
+                        <input autocomplete="off" type="text" name="location" placeholder="YOUR LOCATION" required>
+                      </div>
+                      <div class="col-12 text-center">
+                        <textarea name="message" placeholder="YOUR MESSAGE"></textarea>
+                       <div class="submit-form">
                                         <button class="btn button-animated" type="submit" name="send"><span><i class="fa fa-send"></i> Send Message</span></button>
                                     </div>
-                                    <div class="form-message"> <span class="output_message text-center font-weight-600 uppercase"></span>
-                                    </div>
-                                </form>
+                      </div>
+                      <div class="col-12 form-message">
+                        <span class="output_message text-center font-weight-600 text-uppercase"></span>
+                      </div>
+                    </div>
+                  </div>
+                </form>
                             </div>
                         </div>
                     </div>
